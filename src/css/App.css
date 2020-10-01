@@ -10,7 +10,7 @@ body {
 }
 
 .Post {
-  flex: 0 1 850px;
+  flex: 0 1 1000px;
   margin: 5px;
   padding: 5px;
   margin-bottom: 10px;
@@ -34,7 +34,7 @@ body {
 }
 
 .Post.Open .PostItem {
-  flex-basis: 850px;
+  flex-basis: auto;
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -99,16 +99,16 @@ body {
 }
 
 .Login div span {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .submitButton {
-    font-size: 1.2em;
-    background-color: #ffffff;
-    border: none;
-    color: #ab726f;
-    padding: 13px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
+  font-size: 1.2em;
+  background-color: #ffffff;
+  border: none;
+  color: #ab726f;
+  padding: 13px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}

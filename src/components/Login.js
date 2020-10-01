@@ -18,25 +18,24 @@ query {
 
   return (
     <Query query={GET_USER}>
-      {({ data }) =>
-        (
-          <div>
-            <span
-              style={{
-                color: "red",
-                margin: "0",
-                textAlign: "center"
-              }}
-            >
-              {tryAgain ? "Wrong login or password" : ""}
-            </span>
-            <input className="submitButton"
-              type="submit"
-              onClick={() => loginSubmit(data.user)}
-            />
-          </div>
-        )
-      }
+      {({ data }) => (
+        <div>
+          <span
+            style={{
+              color: "red",
+              margin: "0",
+              textAlign: "center",
+            }}
+          >
+            {tryAgain ? "Wrong login or password" : ""}
+          </span>
+          <input
+            className="submitButton"
+            type="submit"
+            onClick={() => loginSubmit(data.user)}
+          />
+        </div>
+      )}
     </Query>
   );
 }

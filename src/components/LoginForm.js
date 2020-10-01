@@ -7,6 +7,7 @@ export default function LoginForm({ login }) {
 
   return (
     <div className="Login">
+      <h2>Fake Login</h2>
       <div>
         <span>login</span>
         <input
