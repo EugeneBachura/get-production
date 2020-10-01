@@ -1,0 +1,114 @@
+body {
+  background-color: #fff;
+  font-family: system-ui;
+}
+
+.PostList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.Post {
+  flex: 0 1 850px;
+  margin: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #ab726f;
+  color: #fff;
+}
+
+.Post.Open {
+  margin: 0px;
+  padding: 0px;
+}
+
+.PostItem {
+  align-self: center;
+  margin: 5px;
+  padding: 5px;
+  flex: 0 1 400px;
+}
+
+.Post.Open .PostItem {
+  flex-basis: 850px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.PostItem h3 {
+  font-size: 1.4em;
+}
+
+.PostItem p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.Post.Open .PostItem p {
+  text-align: center;
+  margin: 5px;
+}
+
+.Post img {
+  max-width: 100%;
+  box-shadow: 3px 3px 9px #0000008f;
+  border-radius: 10px;
+}
+
+.Post.Open .PostItem img {
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.PostItem button {
+  font-size: 1.2em;
+  background-color: #ffffff;
+  border: none;
+  color: #ab726f;
+  padding: 13px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*Login*/
+.Login {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.Login div {
+  flex: 0 1 30px;
+  padding: 0.5rem;
+  background-color: #e4e4e4;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.Login div * {
+  padding: 0.5rem;
+  flex-basis: 360px;
+}
+
+.Login div span {
+    font-size: 1.2em;
+}
+
+.submitButton {
+    font-size: 1.2em;
+    background-color: #ffffff;
+    border: none;
+    color: #ab726f;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
