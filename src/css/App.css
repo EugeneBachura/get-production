@@ -4,19 +4,35 @@ body {
 }
 
 .PostList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Post {
-  flex: 0 1 1000px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 1000px;
+          flex: 0 1 1000px;
   margin: 5px;
   padding: 5px;
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #ab726f;
   color: #fff;
 }
@@ -27,14 +43,18 @@ body {
 }
 
 .PostItem {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   margin: 5px;
   padding: 5px;
-  flex: 0 1 400px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 400px;
+          flex: 0 1 400px;
 }
 
 .Post.Open .PostItem {
-  flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -56,13 +76,15 @@ body {
 
 .Post img {
   max-width: 100%;
-  box-shadow: 3px 3px 9px #0000008f;
+  -webkit-box-shadow: 3px 3px 9px #0000008f;
+          box-shadow: 3px 3px 9px #0000008f;
   border-radius: 10px;
 }
 
 .Post.Open .PostItem img {
   border-radius: 0px;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .PostItem button {
@@ -78,24 +100,42 @@ body {
 
 /*Login*/
 .Login {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .Login div {
-  flex: 0 1 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30px;
+          flex: 0 1 30px;
   padding: 0.5rem;
   background-color: #e4e4e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .Login div * {
   padding: 0.5rem;
-  flex-basis: 360px;
+  -ms-flex-preferred-size: 360px;
+      flex-basis: 360px;
 }
 
 .Login div span {
