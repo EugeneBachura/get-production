@@ -87,7 +87,7 @@ body {
           box-shadow: none;
 }
 
-.PostItem button {
+.PostItem button, .btnBack {
   font-size: 1.2em;
   background-color: #ffffff;
   border: none;
@@ -96,6 +96,8 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
 }
 
 /*Login*/

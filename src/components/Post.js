@@ -2,7 +2,7 @@ import React from "react";
 import gql from "graphql-tag";
 import { Query } from "react-apollo";
 
-function Post({ idPost }) {
+function Post({ idPost, idOpenPost }) {
   const GET_POST = gql`
   query {
     post(id: ${idPost}) {
@@ -18,22 +18,24 @@ function Post({ idPost }) {
     <Query query={GET_POST}>
       {({ loading, data }) =>
         !loading && (
-          <div className="PostList">
-            <div
-              key={data.post.id}
-              className="Post Open"
-              id={"post_" + data.post.id}
-            >
-              <div className="PostItem">
-                <img
-                  src={process.env.PUBLIC_URL + data.post.img}
-                  alt={data.post.title}
-                />
-                <h3>{data.post.title}</h3>
-                <p>{data.post.body}</p>
+            <div className="PostList">
+              <div
+                key={data.post.id}
+                className="Post Open"
+                id={"post_" + data.post.id}
+              >
+                <div className="PostItem">
+                  <img
+                    src={process.env.PUBLIC_URL + data.post.img}
+                    alt={data.post.title}
+                  />
+                  <h3>{data.post.title}</h3>
+                  <p>{data.post.body}</p>
+                </div>
+                
+            <button onClick={() => idOpenPost(-1)} className="btnBack">Назад</button>
               </div>
             </div>
-          </div>
         )
       }
     </Query>

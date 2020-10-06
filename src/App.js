@@ -23,7 +23,7 @@ function App() {
       <header className="App-header">
         {login ? (
           openPost >= 0 ? (
-            <Post idPost={openPost} />
+            <Post idPost={openPost} idOpenPost={idOpenPost}/>
           ) : (
             <PostList idOpenPost={idOpenPost} />
           )
